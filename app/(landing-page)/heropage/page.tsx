@@ -105,11 +105,11 @@ export default function HeroPage() {
   }, []);
 
   return (
-    <div className="w-full mt-10 lg:mx-5">
+    <div className="w-full pt-10 bg-black lg:px-5">
       <div className="relative">
         <div
           ref={scrollRef}
-          className="hero-page flex overflow-x-scroll lg:overflow-hidden snap-x snap-mandatory lg:snap-none scrollbar-hide px-5 gap-3 lg:items-center"
+          className="hero-page flex overflow-x-scroll  lg:overflow-hidden snap-x snap-mandatory lg:snap-none scrollbar-hide px-5 gap-3 lg:items-center"
         >
           {HeroData.map((hero, index) => {
             const isExpanded = index === expandedIndex;
