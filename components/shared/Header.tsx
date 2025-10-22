@@ -19,13 +19,13 @@ const Header: React.FC = () => {
           <div className="flex items-center space-x-4">
             <div className="relative">
               <div className="w-14 h-14 bg-gradient-to-br from-white via-gray-600 to-black rounded-2xl flex items-center justify-center font-bold text-2xl shadow-lg shadow-blue-500/50 transform hover:scale-105 transition-transform">
-                JD
+                MS
               </div>
               <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-slate-900"></div>
             </div>
             <div>
               <h1 className="text-2xl md:text-3xl font-bold tracking-tight bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
-                Jordan Davis
+               Maya Singletary
               </h1>
               <p className="text-sm text-gray-400 flex items-center gap-1">
                 <Trophy size={14} className="text-yellow-500" />
