@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react'
 import HeroPage from '../heropage/page'
 import Header from '../../../components/shared/Header'
