@@ -1,162 +1,4 @@
-// import React, { useState, useRef, useEffect } from "react";
-
-// export default function HeroPage() {
-//   interface HeropageData {
-//     title: string;
-//     subtitle: string;
-//     description: string;
-//     image?: string;
-//     video?: string;
-//   }
-
-//   const HeroData: HeropageData[] = [
-//     {
-//       title: "CAREER",
-//       subtitle: "Highlights",
-//       description: "Maya Singletary's highlights and achievements.",
-//       video: "/maya1.mp4",
-//     },
-//     {
-//       title: "URSU",
-//       subtitle: "Water",
-//       description:
-//         "URSU is much more than water... It is an inspiration to drink health and a lifestyle.",
-//       image: "/maya3.jpeg",
-//     },
-//     {
-//       title: "CR7",
-//       subtitle: "Fragrances",
-//       description:
-//         "Define your own legacy with the NEW fragrance, Maya Singletary Legacy.",
-//       image: "/maya8.jpeg",
-//     },
-//     {
-//       title: "Erakulis",
-//       subtitle: "App",
-//       description:
-//         "ERAKULIS® is an all-in-one wellness experience for Fitness, Nutrition and Mental Balance.",
-//       image: "/maya4.jpeg",
-//     },
-//     {
-//       title: "CR7",
-//       subtitle: "Fragrances",
-//       description:
-//         "Define your own legacy with the NEW fragrance, Maya Singletary Legacy.",
-//       image: "/maya5.jpeg",
-//     },
-//     {
-//       title: "URSU",
-//       subtitle: "Water",
-//       description:
-//         "URSU is much more than water... It is an inspiration to drink health and a lifestyle.",
-//       image: "/maya6.jpeg",
-//     },
-//   ];
-
-//   const [activeIndex, setActiveIndex] = useState(0);
-//   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-//   const scrollRef = useRef<HTMLDivElement>(null);
-
-//   // Determine which card should be expanded
-//   const expandedIndex = hoveredIndex !== null ? hoveredIndex : 0;
-
-//   // Handle scroll to detect active card on mobile
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (scrollRef.current) {
-//         const scrollLeft = scrollRef.current.scrollLeft;
-//         const cardWidth = scrollRef.current.offsetWidth;
-//         const newIndex = Math.round(scrollLeft / cardWidth);
-//         setActiveIndex(newIndex);
-//       }
-//     };
-
-//     const scrollContainer = scrollRef.current;
-//     if (scrollContainer) {
-//       scrollContainer.addEventListener("scroll", handleScroll);
-//       return () => scrollContainer.removeEventListener("scroll", handleScroll);
-//     }
-//   }, []);
-
-//   return (
-//     <div className="w-full mt-10 lg:mx-5">
-//       <div
-//         ref={scrollRef}
-//         className="hero-page flex overflow-x-scroll lg:overflow-hidden snap-x snap-mandatory lg:snap-none scrollbar-hide px-5 gap-3 lg:items-center"
-//       >
-//         {HeroData.map((hero, index) => {
-//           const isExpanded = index === expandedIndex;
-          
-//           return (
-//             <div
-//               key={index}
-//               className={`relative flex-shrink-0 w-full overflow-hidden shadow-lg snap-center md:snap-start transition-all duration-700 ease-in-out ${
-//                 isExpanded
-//                   ? "lg:h-[85vh] lg:w-[calc(25%-0.75rem)]"
-//                   : "lg:h-[60vh] lg:w-[calc(14.98%-0.75rem)]"
-//               } h-[70vh]`}
-//               style={{
-//                 transitionProperty: "height, width",
-//               }}
-//               onMouseEnter={() => setHoveredIndex(index)}
-//               onMouseLeave={() => setHoveredIndex(null)}
-//             >
-//               {/* Background Image or Video */}
-//               {hero.video ? (
-//                 <video
-//                   src={hero.video}
-//                   autoPlay
-//                   loop
-//                   muted
-//                   playsInline
-//                   className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
-//                     isExpanded ? "grayscale-0" : "grayscale-70"
-//                   }`}
-//                 />
-//               ) : (
-//                 <img
-//                   src={hero.image}
-//                   alt={hero.subtitle}
-//                   className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
-//                     isExpanded ? "grayscale-0" : "grayscale-70"
-//                   }`}
-//                 />
-//               )}
-
-//               {/* Overlay (dark gradient) */}
-//               <div
-//                 className={`absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent transition-opacity duration-500 ${
-//                   isExpanded ? "lg:from-black/80 lg:via-black/50" : ""
-//                 }`}
-//               />
-
-//               {/* Text Content Overlay - Show on active (mobile) or expanded (desktop) */}
-//               <div
-//                 className={`absolute bottom-8 left-8 text-white max-w-lg transition-all duration-500 ${
-//                   (activeIndex === index && window.innerWidth < 768) ||
-//                   (isExpanded && window.innerWidth >= 768)
-//                     ? "opacity-100 translate-y-0"
-//                     : "opacity-0 translate-y-4 md:opacity-0"
-//                 }`}
-//               >
-//                 <h2 className="text-3xl md:text-5xl font-bold mb-2 transform transition-transform duration-500">
-//                   {hero.title}
-//                 </h2>
-//                 <h3 className="text-xl md:text-2xl font-semibold mb-2 opacity-90">
-//                   {hero.subtitle}
-//                 </h3>
-//                 <p className="text-sm md:text-base opacity-80">
-//                   {hero.description}
-//                 </p>
-//               </div>
-//             </div>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// }
-
+"use client";
 
 
 import React, { useState, useRef, useEffect } from "react";
@@ -394,3 +236,174 @@ export default function HeroPage() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState, useRef, useEffect } from "react";
+
+// export default function HeroPage() {
+//   interface HeropageData {
+//     title: string;
+//     subtitle: string;
+//     description: string;
+//     image?: string;
+//     video?: string;
+//   }
+
+//   const HeroData: HeropageData[] = [
+//     {
+//       title: "CAREER",
+//       subtitle: "Highlights",
+//       description: "Maya Singletary's highlights and achievements.",
+//       video: "/maya1.mp4",
+//     },
+//     {
+//       title: "URSU",
+//       subtitle: "Water",
+//       description:
+//         "URSU is much more than water... It is an inspiration to drink health and a lifestyle.",
+//       image: "/maya3.jpeg",
+//     },
+//     {
+//       title: "CR7",
+//       subtitle: "Fragrances",
+//       description:
+//         "Define your own legacy with the NEW fragrance, Maya Singletary Legacy.",
+//       image: "/maya8.jpeg",
+//     },
+//     {
+//       title: "Erakulis",
+//       subtitle: "App",
+//       description:
+//         "ERAKULIS® is an all-in-one wellness experience for Fitness, Nutrition and Mental Balance.",
+//       image: "/maya4.jpeg",
+//     },
+//     {
+//       title: "CR7",
+//       subtitle: "Fragrances",
+//       description:
+//         "Define your own legacy with the NEW fragrance, Maya Singletary Legacy.",
+//       image: "/maya5.jpeg",
+//     },
+//     {
+//       title: "URSU",
+//       subtitle: "Water",
+//       description:
+//         "URSU is much more than water... It is an inspiration to drink health and a lifestyle.",
+//       image: "/maya6.jpeg",
+//     },
+//   ];
+
+//   const [activeIndex, setActiveIndex] = useState(0);
+//   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+//   const scrollRef = useRef<HTMLDivElement>(null);
+
+//   // Determine which card should be expanded
+//   const expandedIndex = hoveredIndex !== null ? hoveredIndex : 0;
+
+//   // Handle scroll to detect active card on mobile
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (scrollRef.current) {
+//         const scrollLeft = scrollRef.current.scrollLeft;
+//         const cardWidth = scrollRef.current.offsetWidth;
+//         const newIndex = Math.round(scrollLeft / cardWidth);
+//         setActiveIndex(newIndex);
+//       }
+//     };
+
+//     const scrollContainer = scrollRef.current;
+//     if (scrollContainer) {
+//       scrollContainer.addEventListener("scroll", handleScroll);
+//       return () => scrollContainer.removeEventListener("scroll", handleScroll);
+//     }
+//   }, []);
+
+//   return (
+//     <div className="w-full mt-10 lg:mx-5">
+//       <div
+//         ref={scrollRef}
+//         className="hero-page flex overflow-x-scroll lg:overflow-hidden snap-x snap-mandatory lg:snap-none scrollbar-hide px-5 gap-3 lg:items-center"
+//       >
+//         {HeroData.map((hero, index) => {
+//           const isExpanded = index === expandedIndex;
+          
+//           return (
+//             <div
+//               key={index}
+//               className={`relative flex-shrink-0 w-full overflow-hidden shadow-lg snap-center md:snap-start transition-all duration-700 ease-in-out ${
+//                 isExpanded
+//                   ? "lg:h-[85vh] lg:w-[calc(25%-0.75rem)]"
+//                   : "lg:h-[60vh] lg:w-[calc(14.98%-0.75rem)]"
+//               } h-[70vh]`}
+//               style={{
+//                 transitionProperty: "height, width",
+//               }}
+//               onMouseEnter={() => setHoveredIndex(index)}
+//               onMouseLeave={() => setHoveredIndex(null)}
+//             >
+//               {/* Background Image or Video */}
+//               {hero.video ? (
+//                 <video
+//                   src={hero.video}
+//                   autoPlay
+//                   loop
+//                   muted
+//                   playsInline
+//                   className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
+//                     isExpanded ? "grayscale-0" : "grayscale-70"
+//                   }`}
+//                 />
+//               ) : (
+//                 <img
+//                   src={hero.image}
+//                   alt={hero.subtitle}
+//                   className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
+//                     isExpanded ? "grayscale-0" : "grayscale-70"
+//                   }`}
+//                 />
+//               )}
+
+//               {/* Overlay (dark gradient) */}
+//               <div
+//                 className={`absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent transition-opacity duration-500 ${
+//                   isExpanded ? "lg:from-black/80 lg:via-black/50" : ""
+//                 }`}
+//               />
+
+//               {/* Text Content Overlay - Show on active (mobile) or expanded (desktop) */}
+//               <div
+//                 className={`absolute bottom-8 left-8 text-white max-w-lg transition-all duration-500 ${
+//                   (activeIndex === index && window.innerWidth < 768) ||
+//                   (isExpanded && window.innerWidth >= 768)
+//                     ? "opacity-100 translate-y-0"
+//                     : "opacity-0 translate-y-4 md:opacity-0"
+//                 }`}
+//               >
+//                 <h2 className="text-3xl md:text-5xl font-bold mb-2 transform transition-transform duration-500">
+//                   {hero.title}
+//                 </h2>
+//                 <h3 className="text-xl md:text-2xl font-semibold mb-2 opacity-90">
+//                   {hero.subtitle}
+//                 </h3>
+//                 <p className="text-sm md:text-base opacity-80">
+//                   {hero.description}
+//                 </p>
+//               </div>
+//             </div>
+//           );
+//         })}
+//       </div>
+//     </div>
+//   );
+// }
+
+
