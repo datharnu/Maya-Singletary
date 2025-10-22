@@ -120,7 +120,7 @@ export default function Footer() {
               href="#contact" 
               className="text-sm font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
             >
-              Let's work together → olagbemisoyee@gmail.com or +2349065434849
+              Let&lsquo;s work together → olagbemisoyee@gmail.com or +2349065434849
             </a>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 export default function PreLoader({ onComplete }: any) {
@@ -31,9 +32,11 @@ export default function PreLoader({ onComplete }: any) {
       }`}
     >
       {/* Full Screen Image */}
-      <img
+      <Image
         src="/maya8.jpeg"
         alt="Athlete"
+        width={100}
+        height={100}
         className="absolute inset-0 w-full h-full object-cover transition-all duration-1000"
         style={{
           filter: `blur(${Math.max(0, 10 - (progress / 100) * 10)}px) brightness(0.5)`
