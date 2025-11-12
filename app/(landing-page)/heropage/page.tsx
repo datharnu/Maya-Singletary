@@ -11,49 +11,51 @@ export default function HeroPage() {
     video?: string;
   }
 
-  const HeroData: HeropageData[] = [
-    {
-      title: "CAREER",
-      subtitle: "Highlights",
-      description: "Maya Singletary's highlights and achievements.",
-      video: "/maya1.mp4",
-    },
-    {
-      title: "URSU",
-      subtitle: "Water",
-      description:
-        "URSU is much more than water... It is an inspiration to drink health and a lifestyle.",
-      image: "/maya3.jpeg",
-    },
-    {
-      title: "Maya",
-      subtitle: "Fragrances",
-      description:
-        "Define your own legacy with the NEW fragrance, Maya Singletary Legacy.",
-      image: "/maya8.jpeg",
-    },
-    {
-      title: "Singletary",
-      subtitle: "App",
-      description:
-        "ERAKULIS® is an all-in-one wellness experience for Fitness, Nutrition and Mental Balance.",
-      image: "/maya4.jpeg",
-    },
-    {
-      title: "Maya",
-      subtitle: "Fragrances",
-      description:
-        "Define your own legacy with the NEW fragrance, Maya Singletary Legacy.",
-      image: "/maya5.jpeg",
-    },
-    {
-      title: "URSU",
-      subtitle: "Water",
-      description:
-        "URSU is much more than water... It is an inspiration to drink health and a lifestyle.",
-      image: "/maya6.jpeg",
-    },
-  ];
+const HeroData: HeropageData[] = [
+  {
+    title: "Daniel Regha",
+    subtitle: "Career",
+    description:
+      "From viral tweets to shaping online conversations, Daniel Regha has become one of Nigeria’s most recognized voices in pop culture and social media commentary.",
+    video: "/d1.mp4",
+  },
+  {
+    title: "Public",
+    subtitle: "Influence",
+    description:
+      "Known for his bold takes and fearless opinions, Daniel Regha’s commentary has sparked national debates and made headlines across major media outlets.",
+    image: "/d2.jpeg",
+  },
+  {
+    title: "Cultural",
+    subtitle: "Impact",
+    description:
+      "Beyond the tweets, Daniel Regha represents a new era of digital accountability — where honesty, humor, and insight shape how the next generation engages online.",
+    image: "/d8.jpeg",
+  },
+  {
+    title: "Brand",
+    subtitle: "Collaborations",
+    description:
+      "Partnering with brands that share his authenticity and influence, Daniel connects audiences through storytelling, relatability, and purpose-driven media.",
+    image: "/d10.jpeg",
+  },
+  {
+    title: "Media",
+    subtitle: "Features",
+    description:
+      "Featured by major outlets and discussed across platforms, Daniel Regha’s presence has reshaped what it means to be a modern-day cultural commentator.",
+    image: "/d9.jpeg",
+  },
+  {
+    title: "Vision",
+    subtitle: "Beyond Trends",
+    description:
+      "For Daniel, it’s never about clout it’s about conversations that inspire reflection, integrity, and change in Nigeria’s online space and beyond.",
+    image: "/d4.jpeg",
+  },
+];
+
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -265,43 +267,43 @@ export default function HeroPage() {
 //     {
 //       title: "CAREER",
 //       subtitle: "Highlights",
-//       description: "Maya Singletary's highlights and achievements.",
-//       video: "/maya1.mp4",
+//       description: "Daniel Regha's highlights and achievements.",
+//       video: "/Daniel1.mp4",
 //     },
 //     {
 //       title: "URSU",
 //       subtitle: "Water",
 //       description:
 //         "URSU is much more than water... It is an inspiration to drink health and a lifestyle.",
-//       image: "/maya3.jpeg",
+//       image: "/Daniel3.jpeg",
 //     },
 //     {
 //       title: "CR7",
 //       subtitle: "Fragrances",
 //       description:
-//         "Define your own legacy with the NEW fragrance, Maya Singletary Legacy.",
-//       image: "/maya8.jpeg",
+//         "Define your own legacy with the NEW fragrance, Daniel Regha Legacy.",
+//       image: "/Daniel8.jpeg",
 //     },
 //     {
 //       title: "Erakulis",
 //       subtitle: "App",
 //       description:
 //         "ERAKULIS® is an all-in-one wellness experience for Fitness, Nutrition and Mental Balance.",
-//       image: "/maya4.jpeg",
+//       image: "/Daniel4.jpeg",
 //     },
 //     {
 //       title: "CR7",
 //       subtitle: "Fragrances",
 //       description:
-//         "Define your own legacy with the NEW fragrance, Maya Singletary Legacy.",
-//       image: "/maya5.jpeg",
+//         "Define your own legacy with the NEW fragrance, Daniel Regha Legacy.",
+//       image: "/Daniel5.jpeg",
 //     },
 //     {
 //       title: "URSU",
 //       subtitle: "Water",
 //       description:
 //         "URSU is much more than water... It is an inspiration to drink health and a lifestyle.",
-//       image: "/maya6.jpeg",
+//       image: "/Daniel6.jpeg",
 //     },
 //   ];
 

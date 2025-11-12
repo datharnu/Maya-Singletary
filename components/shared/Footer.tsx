@@ -22,7 +22,7 @@ export default function Footer() {
               About This Portfolio
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              A modern, responsive portfolio website designed to showcase athletic excellence and career achievements in an engaging and immersive way.
+              A modern, responsive portfolio website designed to showcase excellence and career achievements in an engaging and immersive way.
             </p>
           </div>
 
@@ -114,7 +114,7 @@ export default function Footer() {
         <div className="mt-8 text-center">
           <div className="inline-flex flex-col md:flex-row items-center gap-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl px-6 py-4">
             <p className="text-gray-400 text-sm">
-              Need a stunning portfolio website for your athletic career?
+              Need a stunning portfolio website for your career?
             </p>
             <a 
               href="#contact" 

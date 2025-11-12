@@ -33,7 +33,7 @@ export default function PreLoader({ onComplete }: { onComplete?: () => void }) {
     >
       {/* Full Screen Image */}
       <Image
-        src="/maya8.jpeg"
+        src="/d8.jpeg"
         alt="Athlete"
         width={100}
         height={100}

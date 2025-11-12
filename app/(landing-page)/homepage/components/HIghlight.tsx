@@ -7,8 +7,8 @@ interface Highlight {
   thumbnail?: string;
   title: string;
   year: string;
-  stat: string;
-  statLabel: string;
+  stat?: string;
+  statLabel?: string;
   description: string;
   gradient: string;
 }
@@ -47,92 +47,93 @@ export default function CareerHighlights() {
     };
   }, []);
 
-  const highlights: Highlight[] = [
-    {
-      type: "video",
-      src: "/maya1.mp4",
-      thumbnail: "/thumbnail1.jpeg",
-      title: "Championship Winning ",
-      year: "2024",
-      stat: "90+3'",
-      statLabel: "MINUTE",
-      description: "The moment that sealed the championship victory in her last lap",
-      gradient: "from-yellow-400 via-orange-500 to-red-600"
-    },
-    {
-      type: "image",
-      src: "/m7.jpeg",
-      title: "Gold Medalist",
-      year: "2023",
-      stat: "52",
-      statLabel: "LAPS",
-      description: "100m Dash, National Championships",
-      gradient: "from-purple-400 via-pink-500 to-rose-600"
-    },
-    {
-      type: "video",
-      src: "/m1.mp4",
-      thumbnail: "/thumbnail2.jpeg",
-      title: "🥇 Champion",
-      year: "2023",
-      stat: "15'",
-      statLabel: "MINUTES",
-      description: "4x100m Relay, National Sports Festival (Year)",
-      gradient: "from-blue-400 via-cyan-500 to-teal-600"
-    },
-    {
-      type: "image",
-      src: "/m5.jpeg",
-      title: "Player of the Year",
-      year: "2023",
-      stat: "1st",
-      statLabel: "AWARD",
-      description: "Receiving the prestigious player of the year award",
-      gradient: "from-green-400 via-emerald-500 to-teal-600"
-    },
-    {
-      type: "video",
-      src: "/maya1.mp4",
-      thumbnail: "/thumbnail3.jpeg",
-      title: "🎖 Finalist",
-      year: "2022",
-      stat: "1st",
-      statLabel: "CAP",
-      description: "Commonwealth Youth Games, 100m Sprint (Year)",
-      gradient: "from-red-400 via-rose-500 to-pink-600"
-    },
-    {
-      type: "image",
-      src: "/m7.jpeg",
-      title: "Derby Victory",
-      year: "2022",
-      stat: "89'",
-      statLabel: "MINUTE",
-      description: "🎤 Featured in sports documentary “Road to Glory” (Year)",
-      gradient: "from-indigo-400 via-purple-500 to-fuchsia-600"
-    },
-    {
-      type: "video",
-      src: "/maya1.mp4",
-      thumbnail: "/thumbnail4.jpeg",
-      title: "Masterpiece",
-      year: "2021",
-      stat: "9.8",
-      statLabel: "RATING",
-      description: "💪 Currently training for qualification to the Olympic Games",
-      gradient: "from-orange-400 via-red-500 to-pink-600"
-    },
-    {
-      type: "image",
-      src: "/m4.jpeg",
-      title: "🎽 Record Breaker",
-      year: "2021",
-      stat: "3rd",
-      statLabel: "TROPHY",
-      description: "🏁 Anchored winning relay team in National Sports Festival finals",
-      gradient: "from-cyan-400 via-blue-500 to-indigo-600"
-    }
-  ];
+const highlights: Highlight[] = [
+  {
+    type: "video",
+    src: "/d1.mp4",
+    thumbnail: "/thumbnail1.jpeg",
+    title: "Viral Take 🎤",
+    year: "2024",
+    stat: "1M+",
+    statLabel: "VIEWS",
+    description: "One of Daniel Regha’s most talked-about commentaries that broke the internet.",
+    gradient: "from-yellow-400 via-orange-500 to-red-600",
+  },
+  {
+    type: "image",
+    src: "/d9.jpeg",
+    title: "Style Icon 👔",
+    year: "2023",
+    stat: "Top 10",
+    statLabel: "FEATURE",
+    description: "Featured on multiple fashion blogs for his unapologetic and authentic looks.",
+    gradient: "from-purple-400 via-pink-500 to-rose-600",
+  },
+  {
+    type: "video",
+    src: "/d1.mp4",
+    thumbnail: "/thumbnail2.jpeg",
+    title: "Culture Talk 🎙️",
+    year: "2023",
+    stat: "500K+",
+    statLabel: "ENGAGEMENTS",
+    description: "Speaking on culture, influence, and authenticity in today’s social media space.",
+    gradient: "from-blue-400 via-cyan-500 to-teal-600",
+  },
+  {
+    type: "image",
+    src: "/d8.jpeg",
+    title: "Award Recognition 🏆",
+    year: "2023",
+    stat: "1st",
+    statLabel: "HONOREE",
+    description: "Honored for impact in online culture and public commentary.",
+    gradient: "from-green-400 via-emerald-500 to-teal-600",
+  },
+  {
+    type: "video",
+    src: "/d1.mp4",
+    thumbnail: "/thumbnail3.jpeg",
+    title: "No Filter Ep. 🎬",
+    year: "2022",
+    stat: "Top 5",
+    statLabel: "TRENDING TOPIC",
+    description: "A clip from Daniel’s unfiltered thoughts that trended across platforms.",
+    gradient: "from-red-400 via-rose-500 to-pink-600",
+  },
+  {
+    type: "image",
+    src: "/d3.jpeg",
+    title: "Public Reactions 💬",
+    year: "2022",
+    stat: "100K+",
+    statLabel: "COMMENTS",
+    description: "His opinion that sparked nationwide debate and massive media reactions.",
+    gradient: "from-indigo-400 via-purple-500 to-fuchsia-600",
+  },
+  {
+    type: "video",
+    src: "/d1.mp4",
+    thumbnail: "/thumbnail4.jpeg",
+    title: "Media Appearance 🎥",
+    year: "2021",
+    stat: "3+",
+    statLabel: "INTERVIEWS",
+    description: "Featured in several media houses and YouTube interviews sharing his vision.",
+    gradient: "from-orange-400 via-red-500 to-pink-600",
+  },
+  {
+    type: "image",
+    src: "/d10.jpeg",
+    title: "Brand Collab 🤝",
+    year: "2021",
+    stat: "5+",
+    statLabel: "PARTNERSHIPS",
+    description: "Collaborated with brands like Vipvendor.ng and other lifestyle projects.",
+    gradient: "from-cyan-400 via-blue-500 to-indigo-600",
+  },
+];
+
 
   const getAnimationClass = (index: number): string => {
     const isVisible = visibleItems.includes(index);
